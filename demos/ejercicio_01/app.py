@@ -10,15 +10,15 @@ render = web.template.render('templates')
 
 class Index:
     def GET(self):
-        return "Pagina index"
+        return render.index()
     
 class Usuarios:
     def GET(self):
-        return "Página de usuarios"
+        return render.usuarios()
     
 class Clientes:
     def GET(self):
-        return "Pagina de clientes"
+        return render.clientes()
 
 if __name__ == "__main__":
     app.run()
