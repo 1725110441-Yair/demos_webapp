@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <style>
+    .btn, button {
+        padding: 10px 20px;
+        background-color: #ff0000;
+        color: white;
+        border-radius: 5px;
+        font-family: sans-serif;
+        font-weight: 600;
+    }
+    .btn:hover {
+        background-color: #b30000;
+    }
+    label, h1{
+        font-family: sans-serif;
+        font-weight: 700;
+    }
+    </style>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="ISO-8859-1">
+        <title>Calculadora</title>
+    </head>
+    <body>
+        <center>
+            <h1>Calculadora</h1><br>
+            <form method="POST">
+                <label for="numero1">Ingrese el primer numero:</label><br>
+                <input type="number" id="numero1" name="numero1"><img src="/static/images/number.svg" alt="Imagen de Numeradora"><br><br>
+
+                <label for="numero1">Ingrese el segundo numero:</label><br>
+                <input type="number" id="numero2" name="numero2"><img src="/static/images/number.svg" alt="Imagen de Numeradora"><br><br>
+
+                <label>Resultado: </label><br>
+                <input type="number" name="resultado" id="resultado"><img src="/static/images/send.svg" alt="Imagen de Enviar"><br><br><br>
+
+                <button name="suma" id="suma">Sumar</button><br><br><br><br><br><br>
+            </form>
+            <a href="/" class="btn">Index</a>
+        </center>
+    </body>
+</html>
