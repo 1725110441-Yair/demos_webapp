@@ -1,4 +1,4 @@
-$def with (resultado="")
+$def with(numero_1, numero_2, resultado)
 <!DOCTYPE html>
 <html lang="es">
     <style>
@@ -20,7 +20,7 @@ $def with (resultado="")
     </style>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="ISO-8859-1">
+        <meta charset="UTF-8">
         <title>Calculadora</title>
     </head>
     <body>
@@ -28,15 +28,22 @@ $def with (resultado="")
             <h1>Calculadora</h1><br>
             <form method="POST">
                 <label for="numero1">Ingrese el primer numero:</label><br>
-                <input type="number" id="numero1" name="numero1"><img src="/static/images/number.svg" alt="Imagen de Numeradora"><br><br>
+                <input type="number" id="numero1" name="numero_1" value=$numero_1><img src="/static/images/number.svg" alt="Imagen de Numeradora"><br><br>
 
                 <label for="numero1">Ingrese el segundo numero:</label><br>
-                <input type="number" id="numero2" name="numero2"><img src="/static/images/number.svg" alt="Imagen de Numeradora"><br><br>
+                <input type="number" id="numero2" name="numero_2" value=$numero_2><img src="/static/images/number.svg" alt="Imagen de Numeradora"><br><br>
 
                 <label>Resultado: </label><br>
-                <input type="number" name="resultado" id="resultado" value="$resultado"><img src="/static/images/send.svg" alt="Imagen de Enviar"><br><br><br>
+                <input type="number" name="resultado" id="resultado" value=$resultado><img src="/static/images/send.svg" alt="Imagen de Enviar"><br><br><br>
 
-                <button name="suma" id="suma">Sumar</button><br><br><br><br><br><br>
+                <button name="operacion" id="operacion" value="sumar">Sumar</button>
+                <button name="operacion" id="operacion" value="restar">Restar</button><br><br>
+                <button name="operacion" id="operacion" value="multiplicar">Multiplicar</button>
+                <button name="operacion" id="operacion" value="dividir">Dividir</button><br><br>
+                <button name="operacion" id="operacion" value="raiz_cuadrada">Raiz Cuadrada</button>
+                <button name="operacion" id="operacion" value="potencia">Potencia</button><br><br>
+                <button name="operacion" id="operacion" value="modulo">Módulo</button>
+                <button name="operacion" id="operacion" value="limpiar">Limpiar</button><br><br><br><br><br><br>
             </form>
             <a href="/" class="btn">Index</a>
         </center>
